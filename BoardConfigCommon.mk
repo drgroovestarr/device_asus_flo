@@ -29,6 +29,14 @@ BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=flo user_
 BOARD_KERNEL_CMDLINE += vmalloc=340M
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000
 
+# Build kernel inline
+TARGET_KERNEL_SOURCE := kernel/asus/flo
+TARGET_KERNEL_CONFIG := flo_defconfig
+TARGET_VARIANT_CONFIG := flo_defconfig
+TARGET_SELINUX_CONFIG := flo_defconfig
+KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.8/bin
+
 BOARD_USES_ALSA_AUDIO:= true
 BOARD_USES_LEGACY_ALSA_AUDIO:= false
 BOARD_USES_FLUENCE_INCALL := true
