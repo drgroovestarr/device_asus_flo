@@ -39,6 +39,10 @@ TARGET_KERNEL_CONFIG := cyanogenmod_flo_defconfig
 # PDFIUM
 TARGET_NEEDS_PDFIUM_BIGINT := true
 
+
+# Enable workaround for slow rom flash
+BOARD_SUPPRESS_SECURE_ERASE := true
+
 BOARD_USES_ALSA_AUDIO:= true
 BOARD_USES_LEGACY_ALSA_AUDIO:= false
 BOARD_USES_FLUENCE_INCALL := true
