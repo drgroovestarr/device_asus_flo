@@ -38,6 +38,10 @@ TARGET_KERNEL_CONFIG := lineageos_flo_defconfig
 KERNEL_TOOLCHAIN := "$(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.9/bin/"
 KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
 
+
+# Enable workaround for slow rom flash
+BOARD_SUPPRESS_SECURE_ERASE := true
+
 BOARD_USES_ALSA_AUDIO:= true
 BOARD_USES_LEGACY_ALSA_AUDIO:= false
 BOARD_USES_FLUENCE_INCALL := true
