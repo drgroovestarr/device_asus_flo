@@ -23,3 +23,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT=google/razor/flo:6.0.1/MOB30X/3036618:user/release-keys \
     PRIVATE_BUILD_DESC="razor-user 6.0.1 MOB30X 3036618 release-keys"
     
+# Broken Device Maintainers
+PRODUCT_BUILD_PROP_OVERRIDES += \
+	DEVICE_MAINTAINERS="Jesse Smith (oraixearl) & Jarrod Worlitz (drgroovestarr) "
