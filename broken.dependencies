@@ -1,10 +1,32 @@
 [
  {
-   "repository": "android_external_stlport",
-   "target_path": "external/stlport"
+   "remote":      "github",
+   "repository":  "TheMuppets/proprietary_vendor_broadcom",
+   "target_path": "vendor/broadcom",
+   "branch":      "cm-14.1"
  },
  {
-   "repository": "android_kernel_google_msm",
-   "target_path": "kernel/google/msm"
+   "remote":      "github",
+   "repository":  "drgroovestarr/vendor_asus",
+   "target_path": "vendor/asus",
+   "branch":      "n7.1"
+ },
+ {
+   "remote":      "github",
+   "repository":  "flar2/flo",
+   "target_path": "kernel/asus/flo",
+   "branch":      "ElementalX-6.00-cm"
+ },
+ {
+   "remote":      "github",
+   "repository":  "LineageOS/android_external_stlport",
+   "target_path": "external/stlport",
+   "branch":      "cm-14.1"
+ },
+ {
+   "remote":      "github",
+   "repository":  "drgroovestarr/packages_apps_SnapdragonCamera",
+   "target_path": "packages/apps/SnapdragonCamera",
+   "branch":      "n7.1"
  }
 ]
